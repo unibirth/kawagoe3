@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+  background-color: #FFD700;
+  font-family: 'ヒラギノ角ゴ Pro W3';
+}
+
+.title img{
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.button {
+  margin: 30px auto;
+  display: block;
+  width: 250px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button:hover {
+  text-decoration: none;
+  background-color: #FFD700;
+  border-color: #333;
+  color: #333;
+  letter-spacing: 4px;
+}
+
+footer{
+  background-color: #212121;
+  padding: 10px;
+}
+footer p{
+  color: white;
+  text-align: center;
+}

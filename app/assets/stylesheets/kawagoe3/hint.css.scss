@@ -1,0 +1,70 @@
+// Place all the styles related to the kawagoe3/hint controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.dropmenu{
+  *zoom: 1;
+  list-style-type: none;
+  margin: 5px auto 30px;
+  padding: 0;
+  height: 250px;
+}
+.dropmenu:before, .dropmenu:after{
+  content: "";
+  display: table;
+}
+.dropmenu:after{
+  clear: both;
+}
+.dropmenu li{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.dropmenu li a{
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  background: #212121;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+.dropmenu li ul{
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li ul li{
+  width: 100%;
+}
+.dropmenu li ul li a{
+  padding: 13px 15px;
+  border-top: 1px solid #616161;
+  background: #212121;
+  text-align: left;
+}
+.dropmenu li:hover > a{
+  background: #424242;
+}
+.dropmenu li a:hover{
+  background: #424242;
+}
+#fade-in2 li ul{
+  opacity: 0;
+  top: 50%;
+  visibility: hidden;
+  transition: .5s;
+}
+#fade-in2 li:hover ul{
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}

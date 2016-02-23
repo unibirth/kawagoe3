@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kawagoe3</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <%= link_to image_tag('謎解き3弾_タイトル.png'), kawagoe3_root_path, class: "title" %>
+      </div>
+    </div>
+  </div>
+</header>
+
+<%= yield %>
+
+<footer id="footer">
+
+  <p>主催 /（公社）小江戸川越観光協会 &nbsp;&nbsp;&nbsp; 協力 / 川越市 &nbsp;&nbsp;&nbsp; 監修 / 学生団体UniBirth</p>
+  <p>Copyright 2016 （公社）小江戸川越観光協会 学生団体UniBirth All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
