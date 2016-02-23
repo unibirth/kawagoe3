@@ -9,15 +9,15 @@
 
 !(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['jquery'], function($) {
-      return factory(root, $);
+    define(['jquery'], function(jQuery) {
+      return factory(root, jQuery);
     });
   } else if (typeof exports === 'object') {
     factory(root, require('jquery'));
   } else {
     factory(root, root.jQuery || root.Zepto);
   }
-})(this, function(global, $) {
+})(this, function(global, jQuery) {
 
   'use strict';
 
@@ -43,7 +43,7 @@
    * @const
    * @type {String}
    */
-  var ANIMATIONSTART_EVENTS = $.map(
+  var ANIMATIONSTART_EVENTS = jQuery.map(
     ['animationstart', 'webkitAnimationStart', 'MSAnimationStart', 'oAnimationStart'],
 
     function(eventName) {
@@ -58,7 +58,7 @@
    * @const
    * @type {String}
    */
-  var ANIMATIONEND_EVENTS = $.map(
+  var ANIMATIONEND_EVENTS = jQuery.map(
     ['animationend', 'webkitAnimationEnd', 'MSAnimationEnd', 'oAnimationEnd'],
 
     function(eventName) {
@@ -73,7 +73,7 @@
    * @const
    * @type {Object}
    */
-  var DEFAULTS = $.extend({
+  var DEFAULTS = jQuery.extend({
     hashTracking: true,
     closeOnConfirm: true,
     closeOnCancel: true,
@@ -210,7 +210,7 @@
    * @returns {Number}
    */
   function getScrollbarWidth() {
-    if ($(document.body).height() <= $(window).height()) {
+    if (jQuery(document.body).height() <= jQuery(window).height()) {
       return 0;
     }
 
@@ -249,13 +249,13 @@
       return;
     }
 
-    var $html = $('html');
+    var $html = jQuery('html');
     var lockedClass = namespacify('is-locked');
     var paddingRight;
     var $body;
 
     if (!$html.hasClass(lockedClass)) {
-      $body = $(document.body);
+      $body = jQuery(document.body);
 
       // Zepto does not support '-=', '+=' in the `css` method
       paddingRight = parseInt($body.css('padding-right'), 10) + getScrollbarWidth();
@@ -274,13 +274,13 @@
       return;
     }
 
-    var $html = $('html');
+    var $html = jQuery('html');
     var lockedClass = namespacify('is-locked');
     var paddingRight;
     var $body;
 
     if ($html.hasClass(lockedClass)) {
-      $body = $(document.body);
+      $body = jQuery(document.body);
 
       // Zepto does not support '-=', '+=' in the `css` method
       paddingRight = parseInt($body.css('padding-right'), 10) - getScrollbarWidth();
@@ -505,7 +505,7 @@
    * @param {Object} options
    */
   function Remodal($modal, options) {
-    var $body = $(document.body);
+    var $body = jQuery(document.body);
     var remodal = this;
 
     remodal.settings = $.extend({}, DEFAULTS, options);
