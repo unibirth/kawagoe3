@@ -160,33 +160,4 @@
   <br>
   <a data-remodal-action="cancel" class="button">Close</a>
 </div>
-<script>
-  $(document).on('opening', '.remodal', function () {
-    console.log('opening');
-  });
-
-  $(document).on('opened', '.remodal', function () {
-    console.log('opened');
-  });
-
-  $(document).on('closing', '.remodal', function (e) {
-    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
-  });
-
-  $(document).on('closed', '.remodal', function (e) {
-    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
-  });
-
-  $(document).on('confirmation', '.remodal', function () {
-    console.log('confirmation');
-  });
-
-  $(document).on('cancellation', '.remodal', function () {
-    console.log('cancellation');
-  });
-
-  //  The second way to initialize:
-  $('[data-remodal-id=modal2]').remodal({
-    modifier: 'with-red-theme'
-  });
-  </script>
+<%= javascript_include_tag 'remodal.js', 'data-turbolinks-track' => true %>

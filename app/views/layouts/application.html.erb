@@ -22,6 +22,36 @@
   <p>主催 /（公社）小江戸川越観光協会 &nbsp;&nbsp;&nbsp; 協力 / 川越市 &nbsp;&nbsp;&nbsp; 監修 / 学生団体UniBirth</p>
   <p>Copyright 2016 （公社）小江戸川越観光協会 学生団体UniBirth All Rights Reserved</p>
 </footer>
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+  //  The second way to initialize:
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+</script>
 
 </body>
 </html>
