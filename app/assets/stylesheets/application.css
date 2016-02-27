@@ -62,6 +62,44 @@ body{
   letter-spacing: 4px;
 }
 
+.m_button {
+  margin: 30px auto;
+  display: block;
+  width: 200px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+.m_button::before,
+.m_button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.m_button,
+.m_button::before,
+.m_button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.m_button:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
 footer{
   background-color: #212121;
   padding: 10px;
