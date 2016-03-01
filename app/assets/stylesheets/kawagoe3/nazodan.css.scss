@@ -1,0 +1,24 @@
+// Place all the styles related to the kawagoe3/nazodan controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.time-line1{
+  padding:  20px 5px 40px;
+  text-align: center;
+}
+
+.time-line2{
+  padding:  20px 5px 40px;
+  text-align: center;
+}
+
+@media screen and ( max-width:600px ){
+  .time-line1{
+  padding:  20px 5px 10px;
+  text-align: center;
+ }
+  .time-line2{
+    padding:  10px 5px 40px;
+    text-align: center;
+  }
+}
