@@ -4,10 +4,10 @@
     <ul id="fade-in2" class="dropmenu col-sm-4">
       <li><a href="#">未来フェーズ</a>
         <ul>
-          <li><a href="#hint1-1">ヒント１</a></li>
-          <li><a href="#hint1-2">ヒント２</a></li>
-          <li><a href="#hint1-3">ヒント３</a></li>
-          <li><a href="#hint1-4">ヒント４</a></li>
+          <li id="h1-1"><a href="#hint1-1">ヒント１</a></li>
+          <li id="h1-2"><a href="#hint1-2">ヒント２</a></li>
+          <li id="h1-3"><a href="#hint1-3">ヒント３</a></li>
+          <li id="h1-4"><a href="#hint1-4">ヒント４</a></li>
         </ul>
       </li>
       <%= image_tag '未来_川越_街並イラスト.png', class: "future-kawagoe-img" %>
@@ -15,11 +15,11 @@
     <ul id="fade-in2" class="dropmenu col-sm-4">
       <li><a href="#">過去フェーズ</a>
         <ul>
-          <li><a href="#hint2-1">ヒント１</a></li>
-          <li><a href="#hint2-2">ヒント２</a></li>
-          <li><a href="#hint2-3">ヒント３</a></li>
-          <li><a href="#hint2-4">ヒント４</a></li>
-          <li><a href="#hint2-5">ヒント５</a></li>
+          <li id="h2-1"><a href="#hint2-1">ヒント１</a></li>
+          <li id="h2-2"><a href="#hint2-2">ヒント２</a></li>
+          <li id="h2-3"><a href="#hint2-3">ヒント３</a></li>
+          <li id="h2-4"><a href="#hint2-4">ヒント４</a></li>
+          <li id="h2-5"><a href="#hint2-5">ヒント５</a></li>
         </ul>
       </li>
       <%= image_tag 'ゴエモンイラスト.png', class: "goemon-img" %>
@@ -27,11 +27,11 @@
     <ul id="fade-in2" class="dropmenu col-sm-4">
       <li><a href="#">現在フェーズ</a>
         <ul>
-          <li><a href="#hint3-1">ヒント１</a></li>
-          <li><a href="#hint3-2">ヒント２</a></li>
-          <li><a href="#hint3-3">ヒント３</a></li>
-          <li><a href="#hint3-4">ヒント４</a></li>
-          <li><a href="#hint3-5">ヒント５</a></li>
+          <li id="h3-1"><a href="#hint3-1">ヒント１</a></li>
+          <li id="h3-2"><a href="#hint3-2">ヒント２</a></li>
+          <li id="h3-3"><a href="#hint3-3">ヒント３</a></li>
+          <li id="h3-4"><a href="#hint3-4">ヒント４</a></li>
+          <li id="h3-5"><a href="#hint3-5">ヒント５</a></li>
         </ul>
       </li>
       <%= image_tag 'NO30山車イラスト.png', class: "dashi-img" %>
@@ -164,4 +164,3 @@
   <br>
   <a data-remodal-action="cancel" class="m_button">Close</a>
 </div>
-<%= javascript_include_tag 'remodal.js', 'data-turbolinks-track' => true %>
