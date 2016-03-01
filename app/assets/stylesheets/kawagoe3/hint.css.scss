@@ -12,22 +12,33 @@ h4{
 }
 
 .future-kawagoe-img{
+  display: block;
   max-width: 100%;
-  height: 90%;
+  height: auto;
   text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .goemon-img{
+  display: block;
   max-width: 100%;
-  height: 90%;
+  height: auto;
   text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .dashi-img{
   padding-top: 15px;
   max-width: 100%;
   height: 90%;
-  text-align: center;
 }
 
 .dropmenu{
@@ -35,7 +46,7 @@ h4{
   list-style-type: none;
   margin: 5px auto 30px;
   padding: 0;
-  height: 250px;
+  height: 370px;
   text-align: center;
 }
 .dropmenu:before, .dropmenu:after{
