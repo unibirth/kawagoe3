@@ -6,11 +6,31 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 <body>
 <header>
   <div class="container">
     <div class="row">
       <%= link_to image_tag('謎解き3弾_タイトル.png'), kawagoe3_root_path, class: "title" %>
+      <div class="top-right-content">
+        <ul>
+          <li><%= link_to "過去公演情報", "" %></li>
+          <li><%= link_to "？？？", "" %></li>
+          <li><%= link_to "？？？", "" %></li>
+          <li><%= link_to "ヒント", "" %></li>
+        </ul>
+      </div>
+      <nav id="slide_menu">
+        <a id="sub_button"><i class="fa fa-times"></i></a>
+        <ul>
+            <li class="menu-content"><%= link_to "過去公演情報", "" %></li>
+            <li><%= link_to "？？？", "" %></li>
+            <li class="menu-content"><%= link_to "？？？", "" %></li>
+            <li><%= link_to "ヒント", "" %></li>
+        </ul>
+      </nav>
+      <a id="button"><i class="fa fa-bars"></i></a>
+
     </div>
   </div>
 </header>
@@ -64,6 +84,42 @@
   //  The second way to initialize:
   $('[data-remodal-id=modal2]').remodal({
     modifier: 'with-red-theme'
+  });
+</script>
+<script>
+  $(function(){
+  var menu = $('#slide_menu'), // スライドインするメニューを指定
+      menuBtn = $('#button'),
+      sub_menuBtn = $('#sub_button') // メニューボタンを指定
+      body = $(document.body),
+      menuWidth = menu.outerWidth();
+      // メニューボタンをクリックした時の動き
+      menuBtn.on('click', function(){
+      // body に open クラスを付与する
+      body.toggleClass('open');
+          if(body.hasClass('open')){
+              // open クラスが body についていたらメニューをスライドインする
+              body.animate({'right' : menuWidth }, 300);
+              menu.animate({'right' : 0 }, 300);
+          } else {
+              // open クラスが body についていなかったらスライドアウトする
+              menu.animate({'right' : -menuWidth }, 300);
+              body.animate({'right' : 0 }, 300);
+          }
+      });
+      sub_menuBtn.on('click', function(){
+      // body に open クラスを付与する
+      body.toggleClass('open');
+          if(body.hasClass('open')){
+              // open クラスが body についていたらメニューをスライドインする
+              body.animate({'right' : menuWidth }, 300);
+              menu.animate({'right' : 0 }, 300);
+          } else {
+              // open クラスが body についていなかったらスライドアウトする
+              menu.animate({'right' : -menuWidth }, 300);
+              body.animate({'right' : 0 }, 300);
+          }
+      });
   });
 </script>
 
