@@ -44,8 +44,8 @@ a:hover {
 #slide_menu{
     position: fixed;
     top: 0;
-    right: -240px;
-    width: 240px;
+    right: -180px;
+    width: 180px;
     height: 100%;
     background: #212121;
     color: white;
