@@ -108,12 +108,13 @@ header{
   padding: 10px 30px;
   line-height: 80px;
   color: #000;
-  font-family: 'arial black';
-  font-size: 17px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 .top-right-content ul li a{
   color: #000;
+  font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std";
+  font-weight: 900;
 }
 .top-right-content ul li a:hover{
   color: #000;
