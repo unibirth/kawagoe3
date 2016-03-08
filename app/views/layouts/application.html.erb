@@ -28,10 +28,11 @@
         <ul>
           <li class="menu-content"><%= link_to "ホーム", kawagoe3_root_path %></li>
           <li><%= link_to "ストーリー", kawagoe3_root_path %></li>
-          <li class="menu-content"><%= link_to "過去公演情報", "http://www.unibirth.net/%E9%81%8E%E5%8E%BB%E3%81%AE%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/", target: "_blank" %></li>
-          <li><%= link_to "？？？", "" %></li>
           <li class="menu-content"><%= link_to "？？？", "" %></li>
-          <li><%= link_to "ヒント", kawagoe3_hint_index_path %></li>
+          <li ><%= link_to "？？？", "" %></li>
+          <li class="menu-content"><%= link_to "ヒント", kawagoe3_hint_index_path %></li>
+          <li ><%= link_to "過去公演情報", "http://www.unibirth.net/%E9%81%8E%E5%8E%BB%E3%81%AE%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/", target: "_blank" %></li>
+          <li class="menu-content"><%= link_to "UniBirthとは？", "http://www.unibirth.net/unibirth%E3%81%A8%E3%81%AF/", target: "_blank" %></li>
         </ul>
       </nav>
       <a id="button"><i class="fa fa-bars"></i></a>
@@ -45,18 +46,21 @@
 <div class="bottom-content">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 content">
         <h5>注意事項</h5>
         <hr width="70">
         <p>※ このゲームはあなたが川越の街を巡りながら謎を解いていく周遊型謎解きゲームです。</p>
         <p>※ ネタバレ・ヒントなどブログやSNSに絶対に載せないでください。</p>
         <p>※ 開催日に注意してお越しください。</p>
       </div>
-      <div class="col-sm-4">
-        <h5>アクセス</h5>
+      <div class="col-sm-4 link content">
+        <h5>関連リンク</h5>
         <hr width="70">
+        <p>・ <%= link_to "(公社)小江戸川越観光協会", "http://www.koedo.or.jp/", target: "_blank" %></p>
+        <p>・ <%= link_to "川越市公式サイト", "https://www.city.kawagoe.saitama.jp", target: "_blank" %></p>
+        <p>・ <%= link_to "学生団体UniBirth公式サイト", "http://www.unibirth.net", target: "_blank" %></p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 content">
         <h5>UniBirth公式Twitter</h5>
         <hr width="70">
         <div class="twitter-timeline-container" data-widget-id="704495177113559040">@UniBirth2013さんのツイート</div>
