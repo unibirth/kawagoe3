@@ -45,10 +45,63 @@
   .senryu-content{
     border: solid 1px #414141;
     box-shadow: 3px 3px;
-    margin: 20px 5px;
+    margin: 0;
+    height: 450px;
+    margin: 40px 0 20px;
+    position: relative;
+
+    .img-0{
+      background-image: image-url("take.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
 
     .img-1{
-      background-image: image-url("take.jpg");
+      background-image: image-url("kumo.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .img-2{
+      background-image: image-url("onsen.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .img-3{
+      background-image: image-url("yuki_yama.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .img-4{
+      background-image: image-url("konoha.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .img-5{
+      background-image: image-url("hoshi.jpg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
     }
 
     .img{
@@ -58,7 +111,11 @@
 
       .cover-img{
         background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
       }
 
       p{
@@ -66,23 +123,49 @@
         padding: 2px;
         margin: 0;
         color: white;
+        writing-mode: tb-rl;
       }
 
       .left-content{
+        position: absolute;
+        top: 10px;
+        right: 5px;
       }
 
       .middle-content{
-        text-align: center;
+        position: absolute;
+        top: 70px;
+        right: 40px;
       }
 
       .right-content{
-        text-align: right;
+        position: absolute;
+        top: 200px;
+        right: 75px;
       }
 
       .user-info{
         p{
           font-size: 18px;
           color: #EEE;
+        }
+
+        .tema-content{
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+
+        .age-content{
+          position: absolute;
+          bottom: 10px;
+          left: 20px;
+        }
+
+        .name-content{
+          position: absolute;
+          bottom: 10px;
+          left: 0;
         }
       }
     }
