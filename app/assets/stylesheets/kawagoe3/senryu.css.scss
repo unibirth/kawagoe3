@@ -1,3 +1,91 @@
 // Place all the styles related to the kawagoe3/senryu controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face{
+  font-family: "青柳衡山フォントT";
+  src:font-url('青柳衡山フォントT.ttf');
+}
+
+.senryu{
+  font-family: "青柳衡山フォントT";
+
+  h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin-top: 60px;
+    color: #000;
+  }
+
+  hr{
+    width: 70px;
+    color: #000;
+
+  }
+
+  .post_senryu{
+    h2{
+      font-size: 24px;
+      text-align: center;
+      border: solid 2px #000;
+      padding: 10px;
+      width: 250px;
+      margin: 30px auto;
+
+      a{
+        color: #000;
+      }
+      a:hover{
+        color: #212121;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .senryu-content{
+    border: solid 1px #414141;
+    box-shadow: 3px 3px;
+    margin: 20px 5px;
+
+    .img-1{
+      background-image: image-url("take.jpg");
+    }
+
+    .img{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      .cover-img{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+      }
+
+      p{
+        font-size: 25px;
+        padding: 2px;
+        margin: 0;
+        color: white;
+      }
+
+      .left-content{
+      }
+
+      .middle-content{
+        text-align: center;
+      }
+
+      .right-content{
+        text-align: right;
+      }
+
+      .user-info{
+        p{
+          font-size: 18px;
+          color: #EEE;
+        }
+      }
+    }
+  }
+}
+

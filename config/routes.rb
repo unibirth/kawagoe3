@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     root 'top#index'
     resources :hint, only: :index
     resources :nazodan, only: :index
-    resources :senryu, only: :index
+    resources :senryu, only: [:index, :new, :create]
   end
 end
