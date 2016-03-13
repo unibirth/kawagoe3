@@ -9,7 +9,6 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -88,6 +87,10 @@ header{
   height: 120px;
   /*box-shadow:0px 1px 3px;
   border-bottom: solid 1px #212121;*/
+}
+
+.flash{
+  padding: 0 5px;
 }
 
 .title img{

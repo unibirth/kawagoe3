@@ -3,11 +3,8 @@ Rails.application.routes.draw do
     namespace :admin do
     end
     root 'top#index'
-    resources :hint, only: :index do
-      collection do
-        get :confirm
-      end
-    end
+    resources :hint, only: :index
+    resources :confirm, only: :index
     resources :nazodan, only: :index
     resources :senryu, only: [:index, :new, :create]
   end

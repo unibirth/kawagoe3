@@ -1,0 +1,34 @@
+<div class="col-xs-6 col-md-3">
+  <div class="senryu-content">
+    <div class="img-<%= rand(100)%6 %> img">
+      <div class="cover-img">
+        <div class="row">
+          <div class="left-content">
+            <p><%= senryu.senryu_top %></p>
+          </div>
+          <div class="middle-content">
+            <p><%= senryu.senryu_middle %></p>
+          </div>
+          <div class="right-content">
+            <p><%= senryu.senryu_bottom %></p>
+          </div>
+        </div>
+        <div class="user-info">
+          <div class="row">
+            <div class="tema-content">
+              <p><%= senryu.theme %></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="age-content">
+              <p>年齢 <%= senryu.age %></p>
+            </div>
+            <div class="name-content">
+              <p><%= senryu.name %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
