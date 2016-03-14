@@ -43,6 +43,7 @@
       p{
         margin: 20px;
         font-family: serif;
+        text-align: left;
       }
     }
   }
@@ -58,6 +59,14 @@
 }
 
 @media screen and ( max-width:600px ){
+  .nazodan{
+    h3{
+      color: white;
+      padding: 10px;
+      font-family: serif;
+      text-align: left;
+    }
+  }
   .time-line1{
   padding:  20px 5px 10px;
   text-align: center;
