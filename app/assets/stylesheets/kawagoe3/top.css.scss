@@ -40,6 +40,11 @@ h3{
 }
 
 @media screen and ( max-width:730px ){
+  .story{
+    p{
+      text-align: left;
+    }
+  }
   .dashi{
   max-width: 100%;
   height: 100%;
