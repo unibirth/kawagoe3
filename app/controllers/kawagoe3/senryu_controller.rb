@@ -1,7 +1,7 @@
 class Kawagoe3::SenryuController < ApplicationController
 
   def index
-    @senryus = Senryu.order(created_at: :desc)
+    @senryus = Senryu.order(created_at: :desc).page(params[:page]).per(20)
   end
 
   def new

@@ -44,3 +44,5 @@ gem 'jquery-turbolinks'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'kaminari'
+

@@ -1495,7 +1495,7 @@ select[multiple].input-lg {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #212121;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -1528,8 +1528,8 @@ select[multiple].input-lg {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #ffffff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #212121;
+  border-color: #212121;
   cursor: default;
 }
 .pagination > .disabled > span,
