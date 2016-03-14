@@ -2,6 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.nazodan{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: image-url("bg_nazodan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  .cover-img{
+    background-color: rgba(0, 0, 0, 0.7);
+
+    h2{
+      padding-top: 30px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    hr{
+      width: 70px;
+    }
+
+    h3{
+      color: white;
+      margin: 70px 0;
+      font-family: serif;
+    }
+    .nazodan-content{
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      padding: 5px 20px;
+      margin: 30px 0;
+      h4{
+        color: white;
+        letter-spacing: 1px;
+        padding: 5px;
+        margin-bottom: 30px;
+      }
+      p{
+        margin: 20px;
+        font-family: serif;
+      }
+    }
+  }
+}
 .time-line1{
   padding:  20px 5px 40px;
   text-align: center;
