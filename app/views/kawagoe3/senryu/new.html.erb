@@ -12,23 +12,29 @@
       <h3>川柳を投稿する</h3>
       <%= form_for [:kawagoe3, @senryu],url: kawagoe3_senryu_index_path, html: { class: 'form-horizontal form-contents' } do |f| %>
         <div class="form_content">
+          名前(アルファベット以外)
           <div class="form-group">
-              <%= f.text_field :name, placeholder: "名前", class: "form-control" %>
+              <%= f.text_field :name, placeholder: "例) 川越太郎", class: "form-control" %>
           </div>
+          年齢
           <div class="form-group">
-              <%= f.number_field :age, placeholder: "年齢", class: "form-control" %>
+              <%= f.number_field :age, placeholder: "例) 40", class: "form-control" %>
           </div>
+          テーマ
           <div class="form-group">
-              <%= f.text_field :theme, placeholder: "テーマ", class: "form-control" %>
+              <%= f.text_field :theme, placeholder: "例) 川越の街", class: "form-control" %>
           </div>
+          5
           <div class="form-group">
-              <%= f.text_field :senryu_top, placeholder: "5", class: "form-control" %>
+              <%= f.text_field :senryu_top, placeholder: "例) 川越よ", class: "form-control" %>
           </div>
+          7
           <div class="form-group">
-              <%= f.text_field :senryu_middle, placeholder: "7", class: "form-control" %>
+              <%= f.text_field :senryu_middle, placeholder: "例) 重なる歴史", class: "form-control" %>
           </div>
+          5
           <div class="form-group">
-              <%= f.text_field :senryu_bottom, placeholder: "5", class: "form-control" %>
+              <%= f.text_field :senryu_bottom, placeholder: "例) 山越えよ", class: "form-control" %>
           </div>
           <%= f.submit "投稿する", class: "button" %>
           <%= link_to "前に戻る", kawagoe3_senryu_index_path, class: "button" %>

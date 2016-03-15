@@ -6,6 +6,11 @@ Rails.application.routes.draw do
     resources :hint, only: :index
     resources :confirm, only: :index
     resources :nazodan, only: :index
-    resources :senryu, only: [:index, :new, :create]
+    resources :senryu, only: [:index, :new, :create] do
+      collection do
+        get :like
+      end
+    end
+    resources :likes, only: :create
   end
 end

@@ -48,6 +48,23 @@
       }
     }
   }
+  .ranking{
+    margin: 50px 20px 0;
+    span{
+      font-size: 20px;
+    }
+    h5{
+      float: left;
+      margin: 10px 20px 0 0;
+      padding: 0;
+      a{
+        color: #000;
+        font-size: 18px;
+        padding: 5px;
+        border: dashed 1px #414141;
+      }
+    }
+  }
   .senryu-content{
     border: solid 1px #414141;
     box-shadow: 3px 3px 1px 0;
@@ -175,6 +192,69 @@
           left: 0;
         }
       }
+      span{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        font-size: 18px;
+        color: #fff;
+      }
     }
   }
+  .like_content{
+    span{
+      margin: 0 auto 70px;
+      display: block;
+      width: 100%;
+      height: 54px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 54px;
+      outline: none;
+      background-color: #333;
+      border: 2px solid #333;
+      color: #fff;
+      text-decoration: none;
+      background-color: #FFD700;
+      border-color: #333;
+      color: #333;
+    }
+  }
+}
+
+.like_button {
+  margin: 0 auto 70px;
+  display: block;
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+.like_button::before,
+.like_button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.like_button,
+.like_button::before,
+.like_button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.like_button:hover {
+  text-decoration: none;
+  background-color: #FFD700;
+  border-color: #333;
+  color: #333;
+  letter-spacing: 4px;
 }

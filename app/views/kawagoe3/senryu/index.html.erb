@@ -5,7 +5,16 @@
   <h2>投稿された川柳一般</h2>
   <div class="container">
     <div class="row">
-     <%= render partial: 'senryu', collection: @senryus %>
+      <div class="ranking">
+        <span>並び替え</span>
+        <div class="clearfix">
+          <h5><%= link_to "新着順", kawagoe3_senryu_index_path %></h5>
+          <h5><%= link_to "いいね順", like_kawagoe3_senryu_index_path %></h5>
+        </div>
+      </div>
+      <div id="senryu">
+        <%= render partial: 'senryu', collection: @senryus %>
+      </div>
     </div>
     <div class="pagination">
       <%= paginate(@senryus) %>

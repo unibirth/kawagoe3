@@ -1,4 +1,5 @@
 class Senryu < ActiveRecord::Base
+  has_many :likes
   validates :name, presence: true
   validates :age, presence: true
   validates :theme, presence: true
