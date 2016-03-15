@@ -28,20 +28,41 @@
             </div>
           </div>
         </div>
-        <span><i class="fa fa-heart-o"></i> <%= likes_count(senryu) %></span>
+        <span><i class="fa fa-heart-o"></i>
+          <div id="a_like_count<%= senryu.id %>">
+            <div id="like_count<%= senryu.id %>">
+              <%= likes_count(senryu) %>
+            </div>
+          </div>
+        </span>
       </div>
     </div>
   </div>
   <div class="like_content">
     <div class="row">
       <div class="col-xs-12">
-        <% if is_like(senryu) %>
-          <span>いいね済み</span>
-        <% else %>
-          <%= link_to "いいね", kawagoe3_likes_path(senryu_id: senryu.id), class: "like_button", method: :post, remote: true %>
-        <% end %>
+        <div id="a_like<%=senryu.id%>">
+          <div id="like<%=senryu.id%>">
+            <% if is_like(senryu) %>
+              <span>いいね済み</span>
+            <% else %>
+              <%= link_to "いいね", kawagoe3_likes_path(senryu_id: senryu.id), class: "like_button", onclick: "like(#{senryu.id}, #{likes_count(senryu)})", method: :post, remote: true %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  function like(no, count){
+    $(function(){
+      var num = count + 1
+      $('#like' + no).hide();
+      $('#a_like' + no).append("<span>いいね済み</span>");
+      $('#like_count' + no).hide();
+      $('#a_like_count' + no).append(num);
+    });
+  };
+</script>
 
