@@ -83,6 +83,40 @@ h3{
     margin: 20px 0;
   }
 }
+.qa-content{
+  background-color: #EEE;
+  background-image: image-url("bg-qa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .qa-content-img{
+    padding: 50px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  h2{
+    color: #E53935;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0 0 30px;
+    margin: 0;
+    font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
+  }
+
+  h3{
+    font-size: 18px;
+    text-align: left;
+    font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
+  }
+
+  p{
+    font-size: 15px;
+    font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
+    span{
+      color: #E53935;
+    }
+  }
+}
 
 @media screen and ( max-width:730px ){
   .story{
