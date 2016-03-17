@@ -82,6 +82,10 @@ h3{
     height: auto;
     margin: 20px 0;
   }
+
+  .goemon{
+    display: none;
+  }
 }
 .qa-content{
   background-color: #EEE;
@@ -125,13 +129,33 @@ h3{
     }
   }
   .dashi{
-  max-width: 100%;
-  height: 100%;
-  padding: 20px;
-}
+    max-width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+  }
   .dashi-content{
-  width: 244px;
-  height: 300px;
-  margin: 0 auto;
+    width: 244px;
+    height: 300px;
+    margin: 0 auto;
+    display: none;
+  }
+  .top-content{
+    .map{
+      display: none;
+    }
+    .goemon{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+  .qa-content{
+
+    .qa-title{
+      margin-top: 20px;
+      padding-top: 50px;
+    }
   }
 }
