@@ -1,5 +1,0 @@
-<% if is_like(senryu) %>
-  <span>いいね済み</span>
-<% else %>
-  <%= link_to "いいね", kawagoe3_likes_path(senryu_id: senryu.id), class: "like_button", onclick: "like(#{senryu.id})", method: :post, remote: true %>
-<% end %>
