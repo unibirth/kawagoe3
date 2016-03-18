@@ -137,7 +137,7 @@ h3{
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px; //例えば
+  max-width: 1000px;
 }
 
 
@@ -175,12 +175,24 @@ h3{
 
     .qa-title{
       margin: 20px 0;
-      padding: 50px 0 10px;
+      padding: 30px 0 10px;
     }
 
     .qa-top-content{
-      padding-bottom: 30px;
+      padding-bottom: 15px;
       height: auto;
+    }
+
+    h2{
+      font-size: 20px;
+    }
+
+    h3{
+      font-size: 18px;
+    }
+
+    p{
+      font-size: 16px;
     }
   }
 }
