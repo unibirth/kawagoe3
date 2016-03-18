@@ -58,6 +58,7 @@ h3{
   padding-bottom: 40px;
 
   h3{
+    font-size: 22px;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -68,7 +69,7 @@ h3{
     }
   }
   p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0 30px;
     font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
     span{
@@ -93,34 +94,47 @@ h3{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
   .qa-content-img{
     padding: 50px 10px;
     background-color: rgba(255, 255, 255, 0.3);
   }
 
+  .qa-top-content{
+    height: 145px;
+  }
+
+  .qa-title{
+    margin: 20px 0;
+    padding: 50px 0 20px;
+  }
+
   h2{
+    font-size: 24px;
     color: #E53935;
     text-align: center;
     letter-spacing: 2px;
-    padding: 0 0 30px;
+    padding: 0 0 40px;
     margin: 0;
     font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
   }
 
   h3{
-    font-size: 18px;
+    font-size: 22px;
     text-align: left;
     font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
   }
 
   p{
-    font-size: 15px;
+    font-size: 18px;
     font-family: "ヒラギノ角ゴ Std","Hiragino Kaku Gothic Std", "HiraKakuProN-W6", sans-serif;
     span{
       color: #E53935;
     }
   }
 }
+
+
 
 @media screen and ( max-width:730px ){
   .story{
@@ -154,8 +168,13 @@ h3{
   .qa-content{
 
     .qa-title{
-      margin-top: 20px;
-      padding-top: 50px;
+      margin: 20px 0;
+      padding: 50px 0 10px;
+    }
+
+    .qa-top-content{
+      padding-bottom: 30px;
+      height: auto;
     }
   }
 }
