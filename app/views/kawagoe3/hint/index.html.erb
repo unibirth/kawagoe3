@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <h4>ヒント一覧</h4>
-    <ul id="fade-in2" class="dropmenu col-sm-4">
+    <ul id="fade-in1" class="dropmenu col-sm-4">
       <li><a>1stフェーズ（クリック）</a>
         <ul>
           <li id="h1-1"><a href="#hint1-1">１の謎</a></li>
@@ -34,7 +34,7 @@
       </li>
       <%= image_tag 'ゴエモンイラスト.png', class: "goemon-img" %>
     </ul>
-    <ul id="fade-in2" class="dropmenu col-sm-4">
+    <ul id="fade-in3" class="dropmenu col-sm-4">
       <li><a>3rdフェーズ（クリック）</a>
         <ul>
           <li id="h3-1"><a href="#hint3-1">ピエロのポスター</a></li>
@@ -335,4 +335,163 @@
   <a data-remodal-action="cancel" class="m_button">Close</a>
 </div>
 <%= javascript_include_tag 'remodal.js', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'hint.js', 'data-turbolinks-track' => true %>
+<script>
+  $(function(){
+    var flg = "default";
+    $('#fade-in1 li ul').hide();
+    $('#fade-in1 li').click(function(){
+      if(flg == "default"){
+        $('#fade-in1 li ul').fadeIn(1000);
+        flg = "changed";
+      }else{
+        $('#fade-in1 li ul').hide();
+        flg = "default";
+      }
+    });
+
+    var flg2 = "default";
+    $('#fade-in2 li ul').hide();
+    $('#fade-in2 li').click(function(){
+      if(flg2 == "default"){
+        $('#fade-in2 li ul').fadeIn(1000);
+        flg2 = "changed";
+      }else{
+        $('#fade-in2 li ul').hide();
+        flg2 = "default";
+      }
+    });
+
+    var flg3 = "default";
+    $('#fade-in3 li ul').hide();
+    $('#fade-in3 li').click(function(){
+      if(flg3 == "default"){
+        $('#fade-in3 li ul').fadeIn(1000);
+        flg3 = "changed";
+      }else{
+        $('#fade-in3 li ul').hide();
+        flg3 = "default";
+      }
+    });
+
+  });
+</script>
+<script>
+  $(function(){
+    $("#h1-6-2").css("display", "none");
+    $("#h1-7-2").css("display", "none");
+    $("#h2-5-2").css("display", "none");
+    $("#h2-5-3").css("display", "none");
+    $("#h2-5-4").css("display", "none");
+    $("#h2-6-2").css("display", "none");
+    $("#h3-2-2").css("display", "none");
+    $("#h3-2-3").css("display", "none");
+    $("#h3-2-4").css("display", "none");
+    $("#h3-2-5").css("display", "none");
+    $("#h3-3-2").css("display", "none");
+    $("#h3-3-3").css("display", "none");
+    $("#h3-4-2").css("display", "none");
+    $("#h3-4-3").css("display", "none");
+
+    var num1 = 0;
+    var num2 = 0;
+    var num3 = 0;
+    var num4 = 0;
+    var num5 = 0;
+    var num6 = 0;
+    var num7 = 0;
+    var num8 = 0;
+    var num9 = 0;
+    var num10 = 0;
+    var num11 = 0;
+    var num12 = 0;
+    var num13 = 0;
+    var num14 = 0;
+
+    $("#h1-6-1").click(function(){
+      if (num1 == 0){
+        $("#h1-6-2").toggle();
+        console.log(num1);
+        num1 = 1;
+      }
+      console.log(num1);
+    });
+    $("#h1-7-1").click(function(){
+      if (num2 == 0){
+        $("#h1-7-2").toggle();
+        num2 = 1;
+      }
+    });
+    $("#h2-5-1").click(function(){
+      if (num3 == 0){
+        $("#h2-5-2").toggle();
+        num3 = 1;
+      }
+    });
+    $("#h2-5-2").click(function(){
+      if (num4 == 0){
+        $("#h2-5-3").toggle();
+        num4 = 1;
+      }
+    });
+    $("#h2-5-3").click(function(){
+      if (num5 == 0){
+        $("#h2-5-4").toggle();
+        num5 = 1;
+      }
+    });
+    $("#h2-6-1").click(function(){
+      if (num6 == 0){
+        $("#h2-6-2").toggle();
+        num6 = 1;
+      }
+    });
+    $("#h3-2-1").click(function(){
+      if (num7 == 0){
+        $("#h3-2-2").toggle();
+        num7 = 1;
+      }
+    });
+    $("#h3-2-2").click(function(){
+      if (num8 == 0){
+        $("#h3-2-3").toggle();
+        num8 = 1;
+      }
+    });
+    $("#h3-2-3").click(function(){
+      if (num9 == 0){
+        $("#h3-2-4").toggle();
+        num9 = 1;
+      }
+    });
+    $("#h3-2-4").click(function(){
+      if (num10 == 0){
+        $("#h3-2-5").toggle();
+        num10 = 1;
+      }
+    });
+    $("#h3-3-1").click(function(){
+      if (num11 == 0){
+        $("#h3-3-2").toggle();
+        num11 = 1;
+      }
+    });
+    $("#h3-3-2").click(function(){
+      if (num12 == 0){
+        $("#h3-3-3").toggle();
+        num12 = 1;
+      }
+    });
+    $("#h3-4-1").click(function(){
+      if (num13 == 0){
+        $("#h3-4-2").toggle();
+        num13 = 1;
+      }
+    });
+    $("#h3-4-2").click(function(){
+      if (num14 == 0){
+        $("#h3-4-3").toggle();
+        num14 = 1;
+      }
+    });
+});
+</script>
