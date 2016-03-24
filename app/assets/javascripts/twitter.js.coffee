@@ -11,4 +11,4 @@ renderTimelines = ->
     $container = $(this)
     widgetId = $container.data 'widget-id'
     $container.empty()
-    twttr?.widgets.createTimeline widgetId, $container[0]
+    twttr?.widgets.createTimeline widgetId, $container[0], null
