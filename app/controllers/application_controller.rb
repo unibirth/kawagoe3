@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
     if session[:user_id].blank?
       create_user
     else
-      user = User.find(session[:user_id])
+      user = User.find_by(id: session[:user_id])
       if Time.zone.now > user.created_at + 1.day
         reset_session
         user.destroy
