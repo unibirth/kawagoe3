@@ -14,7 +14,10 @@ class ApplicationController < ActionController::Base
       create_user
     else
       user = User.find_by(id: session[:user_id])
-      user ||= User.create(id: session[:user_id])
+      if user.nil?
+        create_user
+        user = User.find_by(id: session[:user_id])
+      end
       if Time.zone.now > user.created_at + 1.day
         reset_session
         user.destroy
