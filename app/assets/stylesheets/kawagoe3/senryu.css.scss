@@ -31,11 +31,26 @@
   }
 
   .senryu_info{
+    background-image: image-url("wa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    .senryu_img{
+      background-color: rgba(0, 0, 0, 0.3);
+      height: auto;
+    }
+
     h2{
       font-size: 24px;
+      color: #fff;
     }
     h3{
       font-size: 20px;
+      color: #fff;
+    }
+    h4{
+      color: #fff;
     }
 
     p{
