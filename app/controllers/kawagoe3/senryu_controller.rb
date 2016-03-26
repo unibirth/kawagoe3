@@ -17,11 +17,7 @@ class Kawagoe3::SenryuController < ApplicationController
 
   def create
     @senryu = Senryu.new(senryu_params)
-    if @senryu.save
-      redirect_to kawagoe3_senryu_index_path, notice: "川柳を投稿しました"
-    else
-      render :new
-    end
+    render :new unless @senryu.save
   end
 
   private
