@@ -3,7 +3,19 @@
     <div class="confirm">
       <h4>確認</h4>
       <p>ヒントページ閲覧の際にはキットのQRコード付近に記載してありますユーザー名とパスワードが必要です。</p>
-      <%= link_to "ヒントページへ", kawagoe3_hint_index_path, class: "button" %>
+      <%= form_tag kawagoe3_hint_index_path, class: 'form-horizontal form-contents', method: :get do %>
+        <div class="form_content">
+          ユーザー名
+          <div class="form-group">
+            <%= text_field_tag :user_name %>
+          </div>
+          パスワード
+          <div class="form-group">
+            <%= text_field_tag :password %>
+          </div>
+          <%= submit_tag "ヒントページへ", class: "button" %>
+        </div>
+      <% end %>
       <%= link_to "ホームへ戻る", kawagoe3_root_path, class: "button" %>
     </div>
   </div>
